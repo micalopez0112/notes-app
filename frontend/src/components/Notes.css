@@ -1,0 +1,195 @@
+.notes-container {
+  padding: 80px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  background: #111;
+  min-height: 100vh;
+}
+
+.app-title {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.note-content {
+  border: none;
+  background: white;
+  min-height: 65px;
+}
+
+.add-note-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button {
+  background: #2291ff;
+  height: 50px;
+  width: 50px;
+  color: white;
+  padding: 10px;
+}
+
+.add-button:hover {
+  background: #0f5dab;
+}
+
+.notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.note {
+  border: 2px #656d91 solid;
+  padding: 20px;
+  max-width: 400px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: #4153a4;
+  color: white;
+}
+
+.note:hover {
+  box-shadow: 0px 0px 5px #5363a4;
+}
+
+.icon {
+  width: auto;
+  height: 30px;
+}
+
+.edit-icon-container {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.delete-archive-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.delete {
+  color: #5f0000;
+}
+.delete:hover {
+  color: #b40202;
+}
+
+.tick {
+  color: #2bb72b;
+}
+.tick:hover {
+  color: #189118;
+}
+
+.cancel {
+  color: #ce1111;
+}
+.cancel:hover {
+  color: #861313;
+}
+
+.save-cancel-container {
+  display: flex;
+  gap: 20px;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #8383834d;
+  padding: 5px 10px;
+  border-radius: 20px;
+  gap: 10px;
+}
+
+.filters {
+  color: white;
+  margin-right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.active-categories-filters {
+  display: flex;
+  gap: 30px;
+}
+
+.filter {
+  width: 130px;
+  height: 30px;
+  background: white;
+  font-size: 15px;
+}
+
+.add-category {
+  color: white;
+  background: #142261;
+  height: 35px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+  width: 100px;
+}
+
+.delete-category:hover {
+  color: #adadad;
+}
+
+.add-category:hover {
+  background: #071243;
+}
+
+.white:hover {
+  color: #b4b4b4;
+}
+
+.categories-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.note-body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.categories-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 950px) {
+  .notes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 650px) {
+  .notes {
+    grid-template-columns: 1fr;
+  }
+}

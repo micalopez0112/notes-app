@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "ensolvers_notes",
+    "host": "localhost",
+    "dialect": "postgres",
+    "migrationStorage": "sequelize",
+    "migrationStorageTableName": "SequelizeMeta"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "notesdb_u1ol_user",
+    "password": "W29RsWRHBnf9JXwgztAvJZZoCkXPU9g2",
+    "database": "notesdb_u1ol",
+    "host": "dpg-cn14eb7109ks73ccq940-a:5432",
+    "dialect": "postgres"
+  }
+}
