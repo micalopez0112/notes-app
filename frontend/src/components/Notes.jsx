@@ -22,7 +22,7 @@ export default function Notes() {
   const [addCategoryNoteId, setAddCategoryNoteId] = useState(null);
   const [uniqueCategories, setUniqueCategories] = useState([]);
 
-  const backendURL = "https://notes-backend-men4.onrender.com/api/notes";
+  const backendURL = "https://notes-backend-men4.onrender.com/api/notes/";
 
   const fetchNotes = async () => {
     try {
